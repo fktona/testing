@@ -14,16 +14,18 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+
 const firebaseConfig = {
-    apiKey: "AIzaSyDgmSblmAd2F6cKZWfQ_ZKjXM_AnK6vr7g",
-    authDomain: "zur-backend.firebaseapp.com",
-    databaseURL: "https://zur-backend-default-rtdb.firebaseio.com",
-    projectId: "zur-backend",
-    storageBucket: "zur-backend.appspot.com",
-    messagingSenderId: "243050586741",
-    appId: "1:243050586741:web:63bd2f41a8744199a5ce3c"
-  };
-   initializeApp(firebaseConfig);
+  apiKey: "AIzaSyAXBqGT9USQBS2mq-kO_H2rDIjgxNVaqzQ",
+  authDomain: "cryzpto.firebaseapp.com",
+  projectId: "cryzpto",
+  storageBucket: "cryzpto.appspot.com",
+  messagingSenderId: "588859320644",
+  appId: "1:588859320644:web:e415ac4ad3446b17c30f11"
+};
+
+
+const app = initializeApp(firebaseConfig);
 
  admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
